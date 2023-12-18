@@ -1,0 +1,5 @@
+#CustomDepthMsg.msg
+Header header
+
+float32 depth
+

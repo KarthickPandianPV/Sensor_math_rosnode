@@ -1,0 +1,2 @@
+sensor_math
+-DCATKIN_DEVEL_PREFIX=/home/karthick/Sensor_math_rosnode/devel -DCMAKE_INSTALL_PREFIX=/home/karthick/Sensor_math_rosnode/install -G Unix Makefiles
