@@ -1,8 +1,8 @@
-# Install script for directory: /home/karthick/Sensor_math_ros/src/sensor_math
+# Install script for directory: /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_rosnode_maincode/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,63 +43,23 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_math/msg" TYPE FILE FILES
-    "/home/karthick/Sensor_math_ros/src/sensor_math/msg/CustomDepthMsg.msg"
-    "/home/karthick/Sensor_math_ros/src/sensor_math/msg/CustomIMUMsg.msg"
-    "/home/karthick/Sensor_math_ros/src/sensor_math/msg/CustomOrientationMsg.msg"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_math/cmake" TYPE FILE FILES "/home/karthick/Sensor_math_ros/build/sensor_math/catkin_generated/installspace/sensor_math-msg-paths.cmake")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/karthick/Sensor_math_ros/devel/include/sensor_math")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/karthick/Sensor_math_ros/devel/share/roseus/ros/sensor_math")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/karthick/Sensor_math_ros/devel/share/common-lisp/ros/sensor_math")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/karthick/Sensor_math_ros/devel/share/gennodejs/ros/sensor_math")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/karthick/Sensor_math_ros/devel/lib/python3/dist-packages/sensor_math")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/karthick/Sensor_math_ros/devel/lib/python3/dist-packages/sensor_math")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/karthick/Sensor_math_ros/build/sensor_math/catkin_generated/installspace/sensor_math.pc")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_math/cmake" TYPE FILE FILES "/home/karthick/Sensor_math_ros/build/sensor_math/catkin_generated/installspace/sensor_math-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/karthick/Sensor_math_rosnode_maincode/build/sensor_math/catkin_generated/installspace/sensor_math.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_math/cmake" TYPE FILE FILES
-    "/home/karthick/Sensor_math_ros/build/sensor_math/catkin_generated/installspace/sensor_mathConfig.cmake"
-    "/home/karthick/Sensor_math_ros/build/sensor_math/catkin_generated/installspace/sensor_mathConfig-version.cmake"
+    "/home/karthick/Sensor_math_rosnode_maincode/build/sensor_math/catkin_generated/installspace/sensor_mathConfig.cmake"
+    "/home/karthick/Sensor_math_rosnode_maincode/build/sensor_math/catkin_generated/installspace/sensor_mathConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_math" TYPE FILE FILES "/home/karthick/Sensor_math_ros/src/sensor_math/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensor_math" TYPE FILE FILES "/home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/karthick/Sensor_math_ros/build/sensor_math/lib/Fusion/cmake_install.cmake")
+  include("/home/karthick/Sensor_math_rosnode_maincode/build/sensor_math/lib/Fusion/cmake_install.cmake")
 
 endif()
 

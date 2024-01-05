@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DFusion_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"sensor_math\"
 
-C_INCLUDES = -I/home/karthick/Sensor_math_ros/devel/include
+C_INCLUDES = 
 
 C_FLAGS = -fPIC
 

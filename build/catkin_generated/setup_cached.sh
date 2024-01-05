@@ -7,10 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/karthick/Sensor_math_rosnode/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/karthick/Sensor_math_rosnode/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/karthick/Sensor_math_rosnode/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/karthick/Sensor_math_rosnode/build'
-export PYTHONPATH="/home/karthick/Sensor_math_rosnode/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/karthick/Sensor_math_rosnode/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/karthick/Sensor_math_ros/src:/home/karthick/Sensor_math_rosnode/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/karthick/Sensor_math_rosnode_maincode/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/karthick/Sensor_math_rosnode_maincode/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/karthick/Sensor_math_rosnode_maincode/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/karthick/Sensor_math_rosnode_maincode/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/karthick/Sensor_math_rosnode_maincode/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/karthick/Sensor_math_rosnode_maincode/src:$ROS_PACKAGE_PATH"

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/karthick/Sensor_math_rosnode/install/setup.sh
+    local-name: /home/karthick/Sensor_math_rosnode_maincode/install/setup.sh

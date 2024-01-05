@@ -1,8 +1,8 @@
 sensor_math/lib/Fusion/CMakeFiles/Fusion.dir/FusionOffset.c.o: \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionOffset.c \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionOffset.c \
  /usr/include/stdc-predef.h \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionOffset.h \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionMath.h \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionOffset.h \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionMath.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

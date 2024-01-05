@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/karthick/Sensor_math_ros/devel/lib/libFusion.pdb"
-  "/home/karthick/Sensor_math_ros/devel/lib/libFusion.so"
+  "/home/karthick/Sensor_math_rosnode_maincode/devel/lib/libFusion.pdb"
+  "/home/karthick/Sensor_math_rosnode_maincode/devel/lib/libFusion.so"
   "CMakeFiles/Fusion.dir/FusionAhrs.c.o"
   "CMakeFiles/Fusion.dir/FusionAhrs.c.o.d"
   "CMakeFiles/Fusion.dir/FusionCompass.c.o"

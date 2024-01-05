@@ -1,8 +1,8 @@
-# Install script for directory: /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion
+# Install script for directory: /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_rosnode_maincode/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

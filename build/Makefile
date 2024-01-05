@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/karthick/Sensor_math_ros/src
+CMAKE_SOURCE_DIR = /home/karthick/Sensor_math_rosnode_maincode/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/karthick/Sensor_math_ros/build
+CMAKE_BINARY_DIR = /home/karthick/Sensor_math_rosnode_maincode/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthick/Sensor_math_ros/build/CMakeFiles /home/karthick/Sensor_math_ros/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthick/Sensor_math_rosnode_maincode/build/CMakeFiles /home/karthick/Sensor_math_rosnode_maincode/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthick/Sensor_math_ros/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthick/Sensor_math_rosnode_maincode/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -549,212 +549,17 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named sensor_math_generate_messages
+# Target rules for targets named fusion_node
 
 # Build rule for target.
-sensor_math_generate_messages: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_generate_messages
-.PHONY : sensor_math_generate_messages
+fusion_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fusion_node
+.PHONY : fusion_node
 
 # fast build rule for target.
-sensor_math_generate_messages/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_generate_messages.dir/build.make sensor_math/CMakeFiles/sensor_math_generate_messages.dir/build
-.PHONY : sensor_math_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named _sensor_math_generate_messages_check_deps_CustomDepthMsg
-
-# Build rule for target.
-_sensor_math_generate_messages_check_deps_CustomDepthMsg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _sensor_math_generate_messages_check_deps_CustomDepthMsg
-.PHONY : _sensor_math_generate_messages_check_deps_CustomDepthMsg
-
-# fast build rule for target.
-_sensor_math_generate_messages_check_deps_CustomDepthMsg/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/_sensor_math_generate_messages_check_deps_CustomDepthMsg.dir/build.make sensor_math/CMakeFiles/_sensor_math_generate_messages_check_deps_CustomDepthMsg.dir/build
-.PHONY : _sensor_math_generate_messages_check_deps_CustomDepthMsg/fast
-
-#=============================================================================
-# Target rules for targets named _sensor_math_generate_messages_check_deps_CustomIMUMsg
-
-# Build rule for target.
-_sensor_math_generate_messages_check_deps_CustomIMUMsg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _sensor_math_generate_messages_check_deps_CustomIMUMsg
-.PHONY : _sensor_math_generate_messages_check_deps_CustomIMUMsg
-
-# fast build rule for target.
-_sensor_math_generate_messages_check_deps_CustomIMUMsg/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/_sensor_math_generate_messages_check_deps_CustomIMUMsg.dir/build.make sensor_math/CMakeFiles/_sensor_math_generate_messages_check_deps_CustomIMUMsg.dir/build
-.PHONY : _sensor_math_generate_messages_check_deps_CustomIMUMsg/fast
-
-#=============================================================================
-# Target rules for targets named _sensor_math_generate_messages_check_deps_CustomOrientationMsg
-
-# Build rule for target.
-_sensor_math_generate_messages_check_deps_CustomOrientationMsg: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _sensor_math_generate_messages_check_deps_CustomOrientationMsg
-.PHONY : _sensor_math_generate_messages_check_deps_CustomOrientationMsg
-
-# fast build rule for target.
-_sensor_math_generate_messages_check_deps_CustomOrientationMsg/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/_sensor_math_generate_messages_check_deps_CustomOrientationMsg.dir/build.make sensor_math/CMakeFiles/_sensor_math_generate_messages_check_deps_CustomOrientationMsg.dir/build
-.PHONY : _sensor_math_generate_messages_check_deps_CustomOrientationMsg/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_generate_messages_cpp
-
-# Build rule for target.
-sensor_math_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_generate_messages_cpp
-.PHONY : sensor_math_generate_messages_cpp
-
-# fast build rule for target.
-sensor_math_generate_messages_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_generate_messages_cpp.dir/build.make sensor_math/CMakeFiles/sensor_math_generate_messages_cpp.dir/build
-.PHONY : sensor_math_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_gencpp
-
-# Build rule for target.
-sensor_math_gencpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_gencpp
-.PHONY : sensor_math_gencpp
-
-# fast build rule for target.
-sensor_math_gencpp/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_gencpp.dir/build.make sensor_math/CMakeFiles/sensor_math_gencpp.dir/build
-.PHONY : sensor_math_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_generate_messages_eus
-
-# Build rule for target.
-sensor_math_generate_messages_eus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_generate_messages_eus
-.PHONY : sensor_math_generate_messages_eus
-
-# fast build rule for target.
-sensor_math_generate_messages_eus/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_generate_messages_eus.dir/build.make sensor_math/CMakeFiles/sensor_math_generate_messages_eus.dir/build
-.PHONY : sensor_math_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_geneus
-
-# Build rule for target.
-sensor_math_geneus: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_geneus
-.PHONY : sensor_math_geneus
-
-# fast build rule for target.
-sensor_math_geneus/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_geneus.dir/build.make sensor_math/CMakeFiles/sensor_math_geneus.dir/build
-.PHONY : sensor_math_geneus/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_generate_messages_lisp
-
-# Build rule for target.
-sensor_math_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_generate_messages_lisp
-.PHONY : sensor_math_generate_messages_lisp
-
-# fast build rule for target.
-sensor_math_generate_messages_lisp/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_generate_messages_lisp.dir/build.make sensor_math/CMakeFiles/sensor_math_generate_messages_lisp.dir/build
-.PHONY : sensor_math_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_genlisp
-
-# Build rule for target.
-sensor_math_genlisp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_genlisp
-.PHONY : sensor_math_genlisp
-
-# fast build rule for target.
-sensor_math_genlisp/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_genlisp.dir/build.make sensor_math/CMakeFiles/sensor_math_genlisp.dir/build
-.PHONY : sensor_math_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_generate_messages_nodejs
-
-# Build rule for target.
-sensor_math_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_generate_messages_nodejs
-.PHONY : sensor_math_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_math_generate_messages_nodejs/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_generate_messages_nodejs.dir/build.make sensor_math/CMakeFiles/sensor_math_generate_messages_nodejs.dir/build
-.PHONY : sensor_math_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_gennodejs
-
-# Build rule for target.
-sensor_math_gennodejs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_gennodejs
-.PHONY : sensor_math_gennodejs
-
-# fast build rule for target.
-sensor_math_gennodejs/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_gennodejs.dir/build.make sensor_math/CMakeFiles/sensor_math_gennodejs.dir/build
-.PHONY : sensor_math_gennodejs/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_generate_messages_py
-
-# Build rule for target.
-sensor_math_generate_messages_py: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_generate_messages_py
-.PHONY : sensor_math_generate_messages_py
-
-# fast build rule for target.
-sensor_math_generate_messages_py/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_generate_messages_py.dir/build.make sensor_math/CMakeFiles/sensor_math_generate_messages_py.dir/build
-.PHONY : sensor_math_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named sensor_math_genpy
-
-# Build rule for target.
-sensor_math_genpy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_math_genpy
-.PHONY : sensor_math_genpy
-
-# fast build rule for target.
-sensor_math_genpy/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/sensor_math_genpy.dir/build.make sensor_math/CMakeFiles/sensor_math_genpy.dir/build
-.PHONY : sensor_math_genpy/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/main.dir/build.make sensor_math/CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named test_node
-
-# Build rule for target.
-test_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_node
-.PHONY : test_node
-
-# fast build rule for target.
-test_node/fast:
-	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/test_node.dir/build.make sensor_math/CMakeFiles/test_node.dir/build
-.PHONY : test_node/fast
+fusion_node/fast:
+	$(MAKE) $(MAKESILENT) -f sensor_math/CMakeFiles/fusion_node.dir/build.make sensor_math/CMakeFiles/fusion_node.dir/build
+.PHONY : fusion_node/fast
 
 #=============================================================================
 # Target rules for targets named Fusion
@@ -782,9 +587,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... _sensor_math_generate_messages_check_deps_CustomDepthMsg"
-	@echo "... _sensor_math_generate_messages_check_deps_CustomIMUMsg"
-	@echo "... _sensor_math_generate_messages_check_deps_CustomOrientationMsg"
 	@echo "... clean_test_results"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
@@ -804,17 +606,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... run_tests"
-	@echo "... sensor_math_gencpp"
-	@echo "... sensor_math_generate_messages"
-	@echo "... sensor_math_generate_messages_cpp"
-	@echo "... sensor_math_generate_messages_eus"
-	@echo "... sensor_math_generate_messages_lisp"
-	@echo "... sensor_math_generate_messages_nodejs"
-	@echo "... sensor_math_generate_messages_py"
-	@echo "... sensor_math_geneus"
-	@echo "... sensor_math_genlisp"
-	@echo "... sensor_math_gennodejs"
-	@echo "... sensor_math_genpy"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
@@ -822,12 +613,11 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
 	@echo "... Fusion"
+	@echo "... fusion_node"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... main"
-	@echo "... test_node"
 .PHONY : help
 
 

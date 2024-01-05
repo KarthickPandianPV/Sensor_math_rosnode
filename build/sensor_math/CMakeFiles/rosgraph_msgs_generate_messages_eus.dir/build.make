@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/karthick/Sensor_math_ros/src
+CMAKE_SOURCE_DIR = /home/karthick/Sensor_math_rosnode_maincode/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/karthick/Sensor_math_ros/build
+CMAKE_BINARY_DIR = /home/karthick/Sensor_math_rosnode_maincode/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_eus.
 
@@ -74,10 +74,10 @@ sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build: rosgraph_m
 .PHONY : sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 
 sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	cd /home/karthick/Sensor_math_ros/build/sensor_math && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/karthick/Sensor_math_rosnode_maincode/build/sensor_math && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend:
-	cd /home/karthick/Sensor_math_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karthick/Sensor_math_ros/src /home/karthick/Sensor_math_ros/src/sensor_math /home/karthick/Sensor_math_ros/build /home/karthick/Sensor_math_ros/build/sensor_math /home/karthick/Sensor_math_ros/build/sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/karthick/Sensor_math_rosnode_maincode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karthick/Sensor_math_rosnode_maincode/src /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math /home/karthick/Sensor_math_rosnode_maincode/build /home/karthick/Sensor_math_rosnode_maincode/build/sensor_math /home/karthick/Sensor_math_rosnode_maincode/build/sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : sensor_math/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 

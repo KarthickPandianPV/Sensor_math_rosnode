@@ -11,7 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   roscpp
   std_msgs
-  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -48,12 +47,12 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-add_message_files(
-   FILES
-   CustomDepthMsg.msg
-   CustomIMUMsg.msg
-   CustomOrientationMsg.msg
-    )
+# add_message_files(
+#    FILES
+#    CustomDepthMsg.msg
+#    CustomIMUMsg.msg
+#    CustomOrientationMsg.msg
+#     )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -70,10 +69,10 @@ add_message_files(
 # )
 
 ## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-)
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs
+# )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -106,9 +105,8 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES sensor_math 
-  CATKIN_DEPENDS geometry_msgs roscpp std_msgs message_runtime
-  DEPENDS system_lib
+  LIBRARIES sensor_math
+  CATKIN_DEPENDS geometry_msgs roscpp std_msgs
 )
 
 # add_library(Fusion lib/Fusion/FusionAhrs.c lib/Fusion/FusionCompass.c lib/Fusion/FusionOffset.c)
@@ -123,13 +121,10 @@ add_subdirectory(lib/Fusion)
 ## Your package locations should be listed before other locations
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(main src/main.cpp)
-add_dependencies(main ${main_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(main ${catkin_LIBRARIES} Fusion)
+add_executable(fusion_node src/fusion_node.cpp)
+# add_dependencies(fusion_node  ${fusion_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(fusion_node  ${catkin_LIBRARIES} Fusion)
 
-add_executable(test_node src/test_node.cpp)
-add_dependencies(test_node ${main_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(test_node ${catkin_LIBRARIES} )
 
 # target_include_directories(sensor_math PUBLIC
                           # ${PROJECT_BINARY_DIR}

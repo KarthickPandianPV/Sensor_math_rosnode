@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC -shared -Wl,-soname,libFusion.so -o /home/karthick/Sensor_math_ros/devel/lib/libFusion.so CMakeFiles/Fusion.dir/FusionAhrs.c.o CMakeFiles/Fusion.dir/FusionCompass.c.o CMakeFiles/Fusion.dir/FusionOffset.c.o  -lm 
+/usr/bin/cc -fPIC -shared -Wl,-soname,libFusion.so -o /home/karthick/Sensor_math_rosnode_maincode/devel/lib/libFusion.so CMakeFiles/Fusion.dir/FusionAhrs.c.o CMakeFiles/Fusion.dir/FusionCompass.c.o CMakeFiles/Fusion.dir/FusionOffset.c.o  -lm 

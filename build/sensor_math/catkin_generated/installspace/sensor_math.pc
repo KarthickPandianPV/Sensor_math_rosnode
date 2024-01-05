@@ -1,8 +1,8 @@
-prefix=/home/karthick/Sensor_math_rosnode/install
+prefix=/home/karthick/Sensor_math_rosnode_maincode/install
 
 Name: sensor_math
 Description: Description of sensor_math
 Version: 0.0.0
 Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib -lsensor_math
-Requires: geometry_msgs roscpp std_msgs message_runtime
+Requires: geometry_msgs roscpp std_msgs

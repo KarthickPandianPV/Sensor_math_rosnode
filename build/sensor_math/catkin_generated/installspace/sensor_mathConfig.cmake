@@ -67,14 +67,14 @@ set(sensor_math_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(sensor_math_SOURCE_PREFIX /home/karthick/Sensor_math_rosnode/src/sensor_math)
-  set(sensor_math_DEVEL_PREFIX /home/karthick/Sensor_math_rosnode/devel)
+  set(sensor_math_SOURCE_PREFIX /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math)
+  set(sensor_math_DEVEL_PREFIX /home/karthick/Sensor_math_rosnode_maincode/devel)
   set(sensor_math_INSTALL_PREFIX "")
   set(sensor_math_PREFIX ${sensor_math_DEVEL_PREFIX})
 else()
   set(sensor_math_SOURCE_PREFIX "")
   set(sensor_math_DEVEL_PREFIX "")
-  set(sensor_math_INSTALL_PREFIX /home/karthick/Sensor_math_rosnode/install)
+  set(sensor_math_INSTALL_PREFIX /home/karthick/Sensor_math_rosnode_maincode/install)
   set(sensor_math_PREFIX ${sensor_math_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/karthick/Sensor_math_rosnode/install/lib;/home/karthick/Sensor_math_ros/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/karthick/Sensor_math_rosnode_maincode/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(sensor_math_EXPORTED_TARGETS "sensor_math_generate_messages_cpp;sensor_math_generate_messages_eus;sensor_math_generate_messages_lisp;sensor_math_generate_messages_nodejs;sensor_math_generate_messages_py")
+set(sensor_math_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${sensor_math_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${sensor_math_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "geometry_msgs;roscpp;std_msgs;message_runtime")
+set(depends "geometry_msgs;roscpp;std_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(sensor_math_EXPORTED_TARGETS ${${sensor_math_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "sensor_math-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${sensor_math_DIR}/${extra})

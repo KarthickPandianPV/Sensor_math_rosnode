@@ -1,8 +1,8 @@
-# Install script for directory: /home/karthick/Sensor_math_ros/src
+# Install script for directory: /home/karthick/Sensor_math_rosnode_maincode/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_rosnode_maincode/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -54,89 +54,89 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karthick/Sensor_math_ros/install/_setup_util.py")
+   "/home/karthick/Sensor_math_rosnode_maincode/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karthick/Sensor_math_ros/install" TYPE PROGRAM FILES "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/_setup_util.py")
+  file(INSTALL DESTINATION "/home/karthick/Sensor_math_rosnode_maincode/install" TYPE PROGRAM FILES "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karthick/Sensor_math_ros/install/env.sh")
+   "/home/karthick/Sensor_math_rosnode_maincode/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karthick/Sensor_math_ros/install" TYPE PROGRAM FILES "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/env.sh")
+  file(INSTALL DESTINATION "/home/karthick/Sensor_math_rosnode_maincode/install" TYPE PROGRAM FILES "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karthick/Sensor_math_ros/install/setup.bash;/home/karthick/Sensor_math_ros/install/local_setup.bash")
+   "/home/karthick/Sensor_math_rosnode_maincode/install/setup.bash;/home/karthick/Sensor_math_rosnode_maincode/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karthick/Sensor_math_ros/install" TYPE FILE FILES
-    "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/setup.bash"
-    "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/local_setup.bash"
+  file(INSTALL DESTINATION "/home/karthick/Sensor_math_rosnode_maincode/install" TYPE FILE FILES
+    "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/setup.bash"
+    "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karthick/Sensor_math_ros/install/setup.sh;/home/karthick/Sensor_math_ros/install/local_setup.sh")
+   "/home/karthick/Sensor_math_rosnode_maincode/install/setup.sh;/home/karthick/Sensor_math_rosnode_maincode/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karthick/Sensor_math_ros/install" TYPE FILE FILES
-    "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/setup.sh"
-    "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/local_setup.sh"
+  file(INSTALL DESTINATION "/home/karthick/Sensor_math_rosnode_maincode/install" TYPE FILE FILES
+    "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/setup.sh"
+    "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karthick/Sensor_math_ros/install/setup.zsh;/home/karthick/Sensor_math_ros/install/local_setup.zsh")
+   "/home/karthick/Sensor_math_rosnode_maincode/install/setup.zsh;/home/karthick/Sensor_math_rosnode_maincode/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karthick/Sensor_math_ros/install" TYPE FILE FILES
-    "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/setup.zsh"
-    "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/local_setup.zsh"
+  file(INSTALL DESTINATION "/home/karthick/Sensor_math_rosnode_maincode/install" TYPE FILE FILES
+    "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/setup.zsh"
+    "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karthick/Sensor_math_ros/install/.rosinstall")
+   "/home/karthick/Sensor_math_rosnode_maincode/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karthick/Sensor_math_ros/install" TYPE FILE FILES "/home/karthick/Sensor_math_ros/build/catkin_generated/installspace/.rosinstall")
+  file(INSTALL DESTINATION "/home/karthick/Sensor_math_rosnode_maincode/install" TYPE FILE FILES "/home/karthick/Sensor_math_rosnode_maincode/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/karthick/Sensor_math_ros/build/gtest/cmake_install.cmake")
-  include("/home/karthick/Sensor_math_ros/build/sensor_math/cmake_install.cmake")
+  include("/home/karthick/Sensor_math_rosnode_maincode/build/gtest/cmake_install.cmake")
+  include("/home/karthick/Sensor_math_rosnode_maincode/build/sensor_math/cmake_install.cmake")
 
 endif()
 
@@ -148,5 +148,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/karthick/Sensor_math_ros/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/karthick/Sensor_math_rosnode_maincode/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

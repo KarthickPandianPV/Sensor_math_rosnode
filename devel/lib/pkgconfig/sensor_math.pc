@@ -1,8 +1,8 @@
-prefix=/home/karthick/Sensor_math_rosnode/devel
+prefix=/home/karthick/Sensor_math_rosnode_maincode/devel
 
 Name: sensor_math
 Description: Description of sensor_math
 Version: 0.0.0
-Cflags: -I/home/karthick/Sensor_math_rosnode/devel/include -I/home/karthick/Sensor_math_rosnode/src/sensor_math/include
+Cflags: -I/home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/include
 Libs: -L${prefix}/lib -lsensor_math
-Requires: geometry_msgs roscpp std_msgs message_runtime
+Requires: geometry_msgs roscpp std_msgs

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/karthick/Sensor_math_ros/src
+CMAKE_SOURCE_DIR = /home/karthick/Sensor_math_rosnode_maincode/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/karthick/Sensor_math_ros/build
+CMAKE_BINARY_DIR = /home/karthick/Sensor_math_rosnode_maincode/build
 
 # Utility rule file for tests.
 
@@ -78,6 +78,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/karthick/Sensor_math_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karthick/Sensor_math_ros/src /home/karthick/Sensor_math_ros/src /home/karthick/Sensor_math_ros/build /home/karthick/Sensor_math_ros/build /home/karthick/Sensor_math_ros/build/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/karthick/Sensor_math_rosnode_maincode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/karthick/Sensor_math_rosnode_maincode/src /home/karthick/Sensor_math_rosnode_maincode/src /home/karthick/Sensor_math_rosnode_maincode/build /home/karthick/Sensor_math_rosnode_maincode/build /home/karthick/Sensor_math_rosnode_maincode/build/CMakeFiles/tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tests.dir/depend
 

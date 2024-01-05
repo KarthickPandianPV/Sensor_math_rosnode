@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/karthick/Sensor_math_rosnode_maincode/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/karthick/Sensor_math_ros/build/gtest/googletest/cmake_install.cmake")
+  include("/home/karthick/Sensor_math_rosnode_maincode/build/gtest/googletest/cmake_install.cmake")
 
 endif()
 

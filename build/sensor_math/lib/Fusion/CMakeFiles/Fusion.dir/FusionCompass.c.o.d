@@ -1,8 +1,8 @@
 sensor_math/lib/Fusion/CMakeFiles/Fusion.dir/FusionCompass.c.o: \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionCompass.c \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionCompass.c \
  /usr/include/stdc-predef.h \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionAxes.h \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionMath.h \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionAxes.h \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionMath.h \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -28,5 +28,5 @@ sensor_math/lib/Fusion/CMakeFiles/Fusion.dir/FusionCompass.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionCompass.h \
- /home/karthick/Sensor_math_ros/src/sensor_math/lib/Fusion/FusionConvention.h
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionCompass.h \
+ /home/karthick/Sensor_math_rosnode_maincode/src/sensor_math/lib/Fusion/FusionConvention.h
