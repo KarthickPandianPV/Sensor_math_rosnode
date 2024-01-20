@@ -49,10 +49,10 @@ int main(int argc,char** argv) {
     const FusionAhrsSettings settings = {
             .convention = FusionConventionNwu,
             .gain = 0.5f,
-            .gyroscopeRange = 2000.0f, /* replace this with actual gyroscope range in degrees/s */
-            .accelerationRejection = 10.0f,
-            .magneticRejection = 10.0f,
-            .recoveryTriggerPeriod = 5 * SAMPLE_RATE, /* 5 seconds */
+            .gyroscopeRange = 250.0f, /* replace this with actual gyroscope range in degrees/s */
+            .accelerationRejection = 20.0f,
+            .magneticRejection = 20.0f,
+            .recoveryTriggerPeriod = 3 * SAMPLE_RATE, /* 5 seconds */
     };
     FusionAhrsSetSettings(&ahrs, &settings);
 
@@ -72,7 +72,7 @@ int main(int argc,char** argv) {
             // Calculate delta time (in seconds) to account for gyroscope sample clock error
             current_time = ros::Time::now().toSec();
             float deltaTime = current_time - prev_time;
-            std::cout<<deltaTime<<'\n';
+            // std::cout<<deltaTime<<'\n';
             prev_time = current_time;
 
             if (start)
@@ -90,6 +90,7 @@ int main(int argc,char** argv) {
             acc_data_available = false; gyro_data_available = false; mag_data_available = false;
             
         }
+        std::cout<<ahrs.accelerometerIgnored<<'\n';
         ros::spinOnce();
     }
 
@@ -148,9 +149,9 @@ void magnetometerCallBack(const geometry_msgs::Vector3& magnetic_field_msg){
 }
 
 void publishOrientation(){
-    orientation_msg.x = euler.angle.yaw;
+    orientation_msg.x = euler.angle.roll;
     orientation_msg.y = euler.angle.pitch;
-    orientation_msg.z = euler.angle.roll;
+    orientation_msg.z = euler.angle.yaw;
     orientation_pub.publish(orientation_msg);
 }
 

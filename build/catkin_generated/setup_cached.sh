@@ -10,6 +10,6 @@
 export CMAKE_PREFIX_PATH="/home/karthick/Sensor_math_rosnode_maincode/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/karthick/Sensor_math_rosnode_maincode/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/karthick/Sensor_math_rosnode_maincode/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/karthick/Sensor_math_rosnode_maincode/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/karthick/Sensor_math_rosnode_maincode/devel/share/common-lisp'
+export PWD='/home/karthick/Downloads/Sensor_math_rosnode/build'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/karthick/Sensor_math_rosnode_maincode/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/karthick/Sensor_math_rosnode_maincode/src:$ROS_PACKAGE_PATH"
